@@ -5,7 +5,7 @@
     <title></title>
   </head>
   <body>
- <form action="service/DBConnection.php" method="post">
+ <form action="controller/StudentController.php" method="post">
 
        <input type="submit">
 
