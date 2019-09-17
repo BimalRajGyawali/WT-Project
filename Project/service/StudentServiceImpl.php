@@ -7,7 +7,7 @@ include_once '/opt/lampp/htdocs/Project/model/Student.php';
  {
     private $connection;
 
-    public function __construct()
+      public function __construct()
       {
 
           $this->connection = DBConnection::getConnection();
@@ -52,6 +52,43 @@ include_once '/opt/lampp/htdocs/Project/model/Student.php';
 
 
        }
+
+      public function update($student)
+      {
+          $roll = $student->getRoll();
+
+          $firstName = $student->getFirstName();
+          $lastName = $student->getLastName();
+          $marks = $student->getMarks();
+
+          $sql = "update Student
+                  set
+                    fname='$firstName',
+                    lname='$lastName',
+                    marks='$marks'
+                  where roll='$roll'
+          ";
+
+          mysqli_query($this->connection,$sql);
+
+
+
+      }
+
+      public function delete($roll)
+      {
+           $sql = "delete from Student where roll='$roll'";
+
+           mysqli_query($this->connection,$sql);
+
+
+
+      }
+
+
+
 }
+
+
 
 ?>
