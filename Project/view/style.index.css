@@ -1,0 +1,83 @@
+/*--------*/
+/*index.html*/
+/*--------*/
+
+
+/* Universal selector */
+* {
+  box-sizing: border-box;
+}
+
+body{
+	background-color: white;
+}
+
+#column{
+	height:460px;
+	background-color: #3d424a;
+}
+
+.column_left{
+  width: 20%;
+  float: left;
+  background-color: #3d424a;
+  margin-left: 0.5%;
+  margin-top: -10px; 
+ 
+}
+
+.column_mid{
+  width: 58%;
+  float: left;
+  margin-left: 0.5%;
+  margin-top: -10px;
+  background-color: #3d424a;
+
+}
+
+
+
+
+/* Menu bar floated left */
+#left{	
+	list-style-type: none;
+	float:left;
+}
+
+#right {
+	list-style-type: none;
+	float:right;
+}
+
+#info_add{
+
+	margin-top:5%;
+}
+
+
+
+
+/* Hides all block (home,add,view) */
+.div{
+
+	display:none;
+}
+
+/* Displays / Unhides block when clicked */
+.div:target{
+
+	display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

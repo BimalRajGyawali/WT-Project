@@ -28,9 +28,29 @@ require '/opt/lampp/htdocs/Project/model/Student.php';
 
 
 
+   </script>
+
+      <link rel="stylesheet" href="style.index.css">
+      <link rel="stylesheet" href="style_header.css">
+      <link rel="stylesheet" href="style_footer.css">
+      <link rel="stylesheet" href="style_home.css">
+      <link rel="stylesheet" href="style_add.css">
+      <link rel="stylesheet" href="style_view.css">
+      <link rel="stylesheet" href="style_rcolumn.css">
+
+
+
   </head>
   <body>
 
+    <ul class="menu_header">
+    	<div class="menu_container">
+    	<li id="left"><a class="info_home" href="home.php">Home</a></li>
+    	<li id="left"><a class="info_add" href="add.php">Add</a></li>
+    	<li id="left"><a class="info_view" href="../controller/ReadController.php">View</a></li>
+    	<li id="right"><a class="info_username" href="">Username</a></li>
+    	</div>
+    </ul>
 
 
 
@@ -97,6 +117,7 @@ require '/opt/lampp/htdocs/Project/model/Student.php';
 </div>
  </div>
  </div>
+
 
 
  <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">

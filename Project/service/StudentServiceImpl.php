@@ -3,6 +3,7 @@ include_once '/opt/lampp/htdocs/Project/service/StudentService.php';
 include_once '/opt/lampp/htdocs/Project/service/DBConnection.php';
 include_once '/opt/lampp/htdocs/Project/model/Student.php';
 
+
  class StudentServiceImpl implements StudentService
  {
     private $connection;
@@ -16,6 +17,14 @@ include_once '/opt/lampp/htdocs/Project/model/Student.php';
       public function save($student)
       {
             $roll = $student->getRoll();
+
+            if($this->findById($roll) != null)
+            {
+
+                return false;
+            }
+
+
             $firstName = $student->getFirstName();
             $lastName = $student->getLastName();
             $marks = $student->getMarks();
@@ -23,7 +32,9 @@ include_once '/opt/lampp/htdocs/Project/model/Student.php';
             $sql = "insert into Student(roll,fname,lname,marks)
             values('$roll','$firstName','$lastName','$marks')";
 
-            return mysqli_query($this->connection,$sql);
+            mysqli_query($this->connection,$sql);
+
+            return true;
        }
 
        public function getStudents()
@@ -85,7 +96,27 @@ include_once '/opt/lampp/htdocs/Project/model/Student.php';
 
       }
 
+      public function findById($id)
+      {
+         $sql = "select * from Student where roll='$id'";
 
+         $data = mysqli_query($this->connection,$sql);
+
+         $student = null;
+
+         while($row = mysqli_fetch_assoc($data))
+         {
+            $roll =  $row['roll'];
+            $firstName =  $row['fname'];
+            $lastName = $row['lname'];
+            $marks = $row['marks'];
+
+            $student = new Student($roll,$firstName,$lastName,$marks);
+         }
+
+         return $student;
+
+      }
 
 }
 

@@ -1,0 +1,28 @@
+/*Styling footer*/
+.menu_footer{
+	background-color: #3d424a;
+	overflow: hidden;
+	padding: 5px 5px;
+	margin-left:0.5%;
+	margin-right: 0.5%;
+}
+
+.menu_container{
+	margin-left:39%;
+}
+
+#facebook{
+
+	background-color: #1a2959;
+}
+
+#twitter{
+
+	background-color: #3e9df0;
+}
+
+#github{
+
+	background-color: #5c401a;
+}
+

@@ -1,0 +1,39 @@
+/*Styling Menu  */
+.menu_header{
+	background-color: #3d424a;
+	overflow: hidden;
+	padding: 20px 20px;
+	margin-left:0.5%;
+	margin-right: 0.5%;
+}
+
+.menu_container{
+	margin-left:39%;
+}
+
+/* Adds mouse hover effect */
+a:hover{
+	background-color: #25272b;
+	text-decoration: none;
+		color:white;
+}
+a{
+	text-decoration: none;
+	background-color: #3d424a;
+	color:white;
+	font-size: 20px;
+	padding: 20px 20px ;
+}
+
+
+/* Menu bar floated left */
+#left{
+	list-style-type: none;
+	float:left;
+}
+
+/*Menu bar floated right */
+#right {
+	list-style-type: none;
+	float:right;
+}
