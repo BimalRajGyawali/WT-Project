@@ -1,0 +1,229 @@
+/* Universal selector */
+* {
+  box-sizing: border-box;
+}
+
+body{
+	background-color: white;
+}
+
+#column{
+	height:460px;
+	background-color: #3d424a;
+}
+
+.column_left{
+  width: 20%;
+  float: left;
+  background-color: #3d424a;
+  margin-left: 0.5%;
+  margin-top: -10px;
+
+}
+
+.column_mid{
+  width: 58%;
+  float: left;
+  margin-left: 0.5%;
+  margin-top: -10px;
+  background-color: #3d424a;
+
+}
+
+.column_right{
+  width: 20%;
+  float: left;
+  background-color: #3d424a;
+  margin-left: 0.5%;
+  margin-top: -10px;
+  margin-bottom: 0.5%;
+}
+
+
+/*Styling Menu  */
+.menu_header{
+	background-color: #3d424a;
+	overflow: hidden;
+	padding: 20px 20px;
+	margin-left:0.5%;
+	margin-right: 0.5%;
+}
+
+.menu_footer{
+	background-color: #3d424a;
+	overflow: hidden;
+	padding: 5px 5px;
+	margin-left:0.5%;
+	margin-right: 0.5%;
+}
+
+/*  */
+.menu_container{
+	margin-left:39%;
+}
+
+/* Menu bar floated left */
+#left{
+	list-style-type: none;
+	float:left;
+}
+
+#right {
+	list-style-type: none;
+	float:right;
+}
+
+#info_add{
+
+	margin-top:5%;
+}
+
+.visitor{
+	font-size: 20px;
+	color:orange;
+	text-align: center;
+	margin-top: 20%;
+}
+
+#visitor_count{
+	border: 3px dashed orange;
+	font-size: 20px;
+	color:orange;
+	text-align: center;
+	margin-top: 10%;
+	margin-left: 40%;
+	margin-right: 40%;
+	padding:10px;
+
+}
+
+#comming_soon{
+
+	color:orange;
+	text-align: center;
+	margin-top: 50%;
+	margin-left:5%;
+	margin-right:5%;
+	padding:10px;
+	font-size:20px;
+}
+
+#facebook{
+
+	background-color: #1a2959;
+}
+
+#twitter{
+
+	background-color: #3e9df0;
+}
+
+#github{
+
+	background-color: #5c401a;
+}
+
+
+
+
+/*Styling link (in this case menu)*/
+a{
+	text-decoration: none;
+	background-color: #3d424a;
+	color:white;
+	font-size: 20px;
+	padding: 20px 20px ;
+}
+
+/* Adds mouse hover effect */
+a:hover{
+	background-color: #25272b;
+}
+
+/*LINKING FILE*/
+/*LINKING FILE*/
+/*LINKING FILE*/
+
+form{
+  			padding: 2%;
+
+	}
+
+h1,h3{
+	color:white;
+	font-size:;
+}
+
+h1{
+	text-align: center;
+}
+
+/* Hides all block (home,add,view) */
+.div{
+
+	display:none;
+}
+
+/* Displays / Unhides block when clicked */
+.div:target{
+
+	display:block;
+}
+
+
+/* Block of Home */
+.div_home{
+
+		padding: 4%;
+  		background-color: #3d424a;
+}
+
+
+/* Styling Block of add*/
+.info_add{
+
+	background-color:#3d424a;
+}
+
+
+/* Styling Block of view */
+.info_view{
+
+	background-color:#3d424a;
+}
+
+
+/* Styling input fields */
+#text_box {
+
+			width:50%;
+			height:0%;
+			margin-top: 3%;
+			margin-bottom: 1%;
+			margin-left: 25%;
+			font-size: 16px;
+			font-family: serif;
+			padding: 1%;
+     }
+
+
+/* Styling button */
+#button {
+		margin-top:3%;
+		margin-bottom: 2%;
+		margin-left: 30%;
+		cursor: pointer;
+		border: none;
+		padding: 2%;
+		background-color: green;
+		color:white;
+		text-decoration: bold;
+		font-size: 18px;
+		width: 35%;
+	 }
+
+
+/* Mouse Hover Effect */
+#button:hover{
+		 background-color: #25272b;
+}

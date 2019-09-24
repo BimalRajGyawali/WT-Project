@@ -6,6 +6,13 @@ include_once '/opt/lampp/htdocs/Project/service/StudentServiceImpl.php';
  $lastName = $_POST['lastName'];
  $marks = $_POST['marks'];
 
+  if($firstName=="" || $lastName=="" || $marks=="")
+  {
+    header('Location:http://localhost/Project/controller/ReadController.php');
+     exit;
+  }
+
+
   $student = new Student($roll,$firstName,$lastName,$marks);
 
   $service = new StudentServiceImpl();
